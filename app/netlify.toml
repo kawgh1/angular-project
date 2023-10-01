@@ -3,5 +3,5 @@
   command = "ng build"
 [[redirects]]
   from = "/*"
-  to = "src/index.html"
+  to = "app/src/index.html"
   status = 200
