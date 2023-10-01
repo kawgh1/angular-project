@@ -1,0 +1,17 @@
+<h1 style="text-decoration: underline;">Table Component</h1>
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers">
+        {{ header.label }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of data" (click)="record.isClicked = !record.isClicked" [class.active-row]="record.isClicked">
+      <td *ngFor="let header of headers">
+        {{ record[header.key] }}
+      </td>
+    </tr>
+  </tbody>
+</table>

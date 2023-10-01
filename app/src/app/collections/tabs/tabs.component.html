@@ -1,0 +1,15 @@
+<h1 style="text-decoration: underline;">Tab Menu</h1>
+
+<div class="menu-container">
+  <div class="tab-container">
+    <button class="tab-item" routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Biography</button>
+    <button class="tab-item" routerLink="./companies" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Companies</button>
+  
+    <button class="tab-item" routerLink="./partners" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Partners</button>
+  
+  </div>
+  <div class="tab-content-container">
+    <router-outlet></router-outlet>
+
+  </div>
+</div>

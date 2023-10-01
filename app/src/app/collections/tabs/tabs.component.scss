@@ -1,0 +1,28 @@
+.menu-container {
+    display: flex;
+    .tab-container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      .tab-item {
+          padding: 5px;
+          margin: 5px;
+          cursor: pointer;
+          &.active {
+              color: rgb(128, 157, 196);
+          }
+          &:hover {
+              color: rgb(68, 68, 185);
+          }
+        
+      }
+    }
+  
+    .tab-content-container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
