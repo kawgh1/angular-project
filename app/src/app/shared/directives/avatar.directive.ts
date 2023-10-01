@@ -10,11 +10,9 @@ export class AvatarDirective implements OnChanges{
     constructor(private el: ElementRef) { }
 
     ngOnChanges(): void {
-        const padding = '15px';
         const borderRadius = '50px'
         this.el.nativeElement.style.height = this.size + 'px';
         this.el.nativeElement.style.width = this.size + 'px';
-        this.el.nativeElement.style.padding = padding;
         this.el.nativeElement.style.borderRadius = borderRadius;
     }
 

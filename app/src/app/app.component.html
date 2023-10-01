@@ -1,14 +1,16 @@
+<app-header [size]="value"></app-header>
 
-<div>
-    <app-header [size]="value"></app-header>
-    <h1>Welcome to my show</h1>
-    <button (click)="onIncrease()">Increase</button>
-    <button (click)="onDecrease()">Decrease</button>
-    <button clickLog (click)="clickLogClicked()">click log</button>
+<div class="container">
+  <h1>Welcome to my show</h1>
+  <div class="button-container">
+    <button class="button" (click)="onIncrease()">Increase</button>
+    <button class="button" (click)="onDecrease()">Decrease</button>
+    <button clickLog class="button" (click)="clickLogClicked()">click log</button>
+  
+    <app-hello (hello)="onHello($event)" class="button"></app-hello>
+  </div>
 
-    <app-hello (hello)="onHello($event)"></app-hello>
+
+  <!-- routed modules will appear here -->
+  <router-outlet></router-outlet>
 </div>
-
-
-
-<router-outlet></router-outlet>

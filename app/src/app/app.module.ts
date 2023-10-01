@@ -8,19 +8,24 @@ import { ButtonDirective } from './shared/directives/button.directive';
 import { AvatarDirective } from './shared/directives/avatar.directive';
 import { ClickLogDirective } from './shared/directives/clickLog.directive';
 import { HelloComponent } from './shared/hello/hello.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [							
     AppComponent,
       HeaderComponent,
       ButtonDirective,
       AvatarDirective,
       ClickLogDirective,
-      HelloComponent
+      HelloComponent,
+      HomeComponent,
+      NotFoundComponent
    ],
+   // AppRoutingModule contains default routing behavior and should be last
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

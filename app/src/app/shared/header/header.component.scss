@@ -4,15 +4,15 @@
     justify-content: space-between;
     height: 60px;
     width: 100%;
-    padding: 15px;
-    background-color: aqua;
+    background-color: rgb(54, 146, 146);
 
     .logo {
         height: 50px;
-        color: blue;
+        color: rgb(5, 5, 71);
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 15px;
     }
 
     .button-container {
@@ -20,10 +20,19 @@
         align-items: center;
         justify-content: space-around;
         width: 50%;
+        padding: 15px;
 
         .button {
             height: 40px;
             width: 100px;
+            cursor: pointer;
+            border-radius: 20px;
+            color:#091b39;
+
+            &.active {
+                font-weight: 500;
+                color: #2b7cff;
+            }
         }
     }
 }

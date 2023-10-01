@@ -11,16 +11,11 @@ export class HeaderComponent implements OnInit {
   @Input()
   size = 64;
 
-  readonly buttonList = ['Home', 'About', 'Profile']
+  readonly buttonList = ['elements', 'collections', 'views', 'mods']
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  // ngOnChanges(changes: SimpleChanges): void {
-  //   console.log(changes)
-  //   this.size = changes['size'].currentValue;
-  // }
 
 }
