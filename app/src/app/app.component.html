@@ -1,0 +1,14 @@
+
+<div>
+    <app-header [size]="value"></app-header>
+    <h1>Welcome to my show</h1>
+    <button (click)="onIncrease()">Increase</button>
+    <button (click)="onDecrease()">Decrease</button>
+    <button clickLog (click)="clickLogClicked()">click log</button>
+
+    <app-hello (hello)="onHello($event)"></app-hello>
+</div>
+
+
+
+<router-outlet></router-outlet>

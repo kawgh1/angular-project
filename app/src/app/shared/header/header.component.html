@@ -1,0 +1,14 @@
+<div class="header-container">
+  <div class="logo">
+    <h1>logo</h1>
+  </div>
+  <div class="button-container">
+    <button appButton class="button" *ngFor="let button of buttonList">
+      {{ button }}
+    </button>
+    <div class="logo">
+      <img appAvatar src="/assets/avatar.png" [size]="size"/>
+    </div>
+  </div>
+ 
+</div>
