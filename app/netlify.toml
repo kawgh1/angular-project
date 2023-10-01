@@ -1,7 +1,0 @@
-[build]
-  publish = "app/build"
-  command = "ng build"
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
